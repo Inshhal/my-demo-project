@@ -1,0 +1,73 @@
+.install-section {
+  padding: 60px 20px;
+  background-color: rgb(243, 80, 80);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.install-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.install-section .subtext {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.install-steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 240px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.circle {
+  background-color: #ff3c61;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.icon {
+  font-size: 28px;
+  color: #ff3c61;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.step p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
