@@ -1,0 +1,73 @@
+/* File: src/components/Connections.css */
+
+.connections-section {
+  background-color: #f9fbfd;
+  padding: 60px 0;
+}
+
+.connection-image {
+  height: 500px;
+  width: 500px;
+  max-width: 80%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+
+.content-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-box:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.content-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.content-icon {
+  font-size: 1.8rem;
+  color: #dc3545;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.content-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.content-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .connection-image {
+    width: 200px;
+    margin-bottom: 25px;
+  }
+
+  .content-box {
+    padding: 15px 20px;
+  }
+
+  .content-title {
+    font-size: 1.1rem;
+  }
+
+  .content-desc {
+    font-size: 0.9rem;
+  }
+}

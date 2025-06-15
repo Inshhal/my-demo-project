@@ -1,0 +1,49 @@
+/* File: src/components/Features.css */
+
+.features-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.features-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.features-subheading {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #ff4d4f;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-description {
+  font-size: 0.95rem;
+  color: #555;
+}
