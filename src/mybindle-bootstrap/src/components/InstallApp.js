@@ -1,26 +1,44 @@
+// File: src/components/InstallApp.js
 import React from 'react';
 import './InstallApp.css';
 
-const steps = ['Download', 'Install App', 'Ready to Use'];
+const InstallApp = () => {
+  return (
+    <section className="install-section py-5">
+      <div className="container text-center">
+        <h2 className="install-title mb-3">How to Install Our App</h2>
+        <p className="install-subtitle mb-5">
+          Getting started is quick and easy! Follow these simple steps to install and start using MyBindle today.
+        </p>
 
-const InstallApp = () => (
-  <section className="install-section py-5">
-    <div className="container text-center">
-      <h2 className="mb-4">How to Install Our App</h2>
-      <div className="row justify-content-center">
-        {steps.map((step, idx) => (
-          <div key={idx} className="col-md-3 mb-3">
-            <div className="card shadow-sm h-100">
-              <div className="card-body">
-                <h5 className="text-danger">Step 0{idx + 1}</h5>
-                <p className="mt-2">{step}</p>
-              </div>
+        <div className="row justify-content-center text-start">
+          <div className="col-md-4 mb-4">
+            <div className="install-step">
+              <div className="step-number">Step no 01</div>
+              <h5 className="step-heading">Download</h5>
+              <p className="step-description">Open Play Store or App Store</p>
             </div>
           </div>
-        ))}
+
+          <div className="col-md-4 mb-4">
+            <div className="install-step">
+              <div className="step-number">Step no 02</div>
+              <h5 className="step-heading">Install App</h5>
+              <p className="step-description">The app will install automatically.</p>
+            </div>
+          </div>
+
+          <div className="col-md-4 mb-4">
+            <div className="install-step">
+              <div className="step-number">step no 03</div>
+              <h5 className="step-heading">Ready to Use</h5>
+              <p className="step-description">Sign up or log in & start exploring.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default InstallApp;

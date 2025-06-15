@@ -1,59 +1,48 @@
-.install-app-section {
-  background-color: #fff5f5;
+.install-section {
+  background-color: #fff;
+  padding: 60px 0;
 }
 
-.install-heading {
-  font-size: 2.4rem;
+.install-title {
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #dc3545;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.install-subheading {
-  font-size: 1.1rem;
-  color: #6c757d;
+.install-subtitle {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: center;
 }
 
-.install-card {
-  background: white;
-  border-radius: 16px;
-  position: relative;
-  padding-top: 3rem;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.install-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+.install-step {
+  background-color: #fff; 
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+  transition: all 0.3s ease-in-out;
+  height: 100%;
 }
 
 .step-number {
-  position: absolute;
-  top: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px; height: 40px;
-  background: #dc3545;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff3e3e; 
+  margin-bottom: 10px;
 }
 
-.icon {
-  display: inline-block;
-}
-
-.step-title {
+.step-heading {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 8px;
+  color: #000;
+  margin-bottom: 8px;
 }
 
-.step-desc {
+.step-description {
   font-size: 0.95rem;
   color: #555;
-  margin-top: 6px;
 }

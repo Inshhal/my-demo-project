@@ -1,73 +1,72 @@
-.install-section {
-  padding: 60px 20px;
+.download-section {
+  padding: 70px 20px;
   background-color: rgb(243, 80, 80);
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
 }
 
-.install-section h2 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.install-section .subtext {
-  font-size: 14px;
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-.install-steps {
+.download-wrapper {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.download-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.download-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.download-subheading {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
-.step {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  width: 240px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  transition: transform 0.3s ease;
+.store-btn {
+  height: 42px;
+  width: auto;
+  cursor: pointer;
 }
 
-.step:hover {
-  transform: translateY(-5px);
+.download-image {
+  flex: 1;
+  text-align: right;
+  min-width: 250px;
 }
 
-.circle {
-  background-color: #ff3c61;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 10px;
+.download-app-image {
+  width: 260px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.icon {
-  font-size: 28px;
-  color: #ff3c61;
-  margin-bottom: 10px;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .download-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 
-.step h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #222;
-}
+  .download-image {
+    text-align: center;
+  }
 
-.step p {
-  font-size: 13px;
-  color: #666;
-  line-height: 1.4;
+  .download-heading {
+    font-size: 1.6rem;
+  }
 }

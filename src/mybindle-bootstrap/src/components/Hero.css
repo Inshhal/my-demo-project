@@ -42,17 +42,7 @@
   
 }
 
-.blackimage{
-    background-color: black;
-    width: 330px;
-    height: 700px;
-    position: absolute;
-    z-index: 2;
-    opacity: 25%;
-    left: 165px;
-    top: 180px;
-    border-radius: 35px;
-}
+
 
 /* Seamless Label */
 .seamless-label {
@@ -110,15 +100,5 @@
     transform: translateY(10%);
   }
 
-  .blackimage{
-    background-color: black;
-        width: 200px;
-        height: 410px;
-        position: absolute;
-        z-index: 2;
-        opacity: 25%;
-        left: 95px;
-        top: 60px;
-        border-radius: 35px;
-}
+
 }

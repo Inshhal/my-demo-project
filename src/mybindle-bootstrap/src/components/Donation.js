@@ -25,4 +25,4 @@ const DonationSection = () => {
   );
 };
 
-export default DonationSection;
+export default DonationSection;  

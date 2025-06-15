@@ -1,25 +1,38 @@
-/* File: src/components/Connections.css */
-
 .connections-section {
-  background-color: #f9fbfd;
-  padding: 60px 0;
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+.connections-heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.connections-subheading {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px;
 }
 
 .connection-image {
-  height: 500px;
-  width: 500px;
-  max-width: 80%;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
 
 .content-box {
-  background: #ffffff;
-  border-radius: 12px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
   padding: 20px 25px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   display: flex;
   align-items: flex-start;
+  gap: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -29,21 +42,20 @@
 
 .content-box:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
 }
 
 .content-icon {
   font-size: 1.8rem;
-  color: #dc3545;
+  color: #f35050;
   flex-shrink: 0;
-  margin-right: 15px;
 }
 
 .content-title {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 8px;
-  color: #333;
+  margin-bottom: 6px;
+  color: #222;
 }
 
 .content-desc {
@@ -52,22 +64,20 @@
   margin: 0;
 }
 
-/* Responsive (Mobile) */
+/* Responsive Design */
 @media (max-width: 768px) {
   .connection-image {
-    width: 200px;
-    margin-bottom: 25px;
+    max-width: 250px;
+    margin-bottom: 30px;
   }
 
   .content-box {
-    padding: 15px 20px;
+    padding: 18px 20px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .content-title {
-    font-size: 1.1rem;
-  }
-
-  .content-desc {
-    font-size: 0.9rem;
+  .content-icon {
+    margin-bottom: 10px;
   }
 }

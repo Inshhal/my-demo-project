@@ -1,36 +1,26 @@
-// DownloadCTA.js
-import React from "react";
-import "./DownloadCTA.css";
-import { FaDownload, FaMobileAlt, FaCheckCircle } from "react-icons/fa";
+import React from 'react';
+import './DownloadCTA.css';
 
 const DownloadCTA = () => {
   return (
-    <section className="install-section">
-      <h2>How to Install Our App</h2>
-      <p className="subtext">
-        Getting started is quick and easy! Follow these simple steps to install and start using MyBindle today.
-      </p>
+    <section className="download-section">
+      <div className="container download-wrapper">
+        <div className="download-text">
+          <h2 className="download-heading">Join the Fun – Download MyBindle Now!</h2>
+          <p className="download-subheading">
+            Your Social Network. Your Way.<br />
+            Download MyBindle Now and Be a Part<br />
+            of a Community That’s Always Buzzing!
+          </p>
 
-      <div className="install-steps">
-        <div className="step">
-          <div className="circle">01</div>
-          <FaDownload className="icon" />
-          <h3>Download</h3>
-          <p>Open Play Store or App Store</p>
+          <div className="store-buttons">
+            <img src="/appstore.svg" alt="App Store" className="store-btn" />
+            <img src="/playstore.svg" alt="Google Play" className="store-btn" />
+          </div>
         </div>
 
-        <div className="step">
-          <div className="circle">02</div>
-          <FaMobileAlt className="icon" />
-          <h3>Install App</h3>
-          <p>The app will install automatically.</p>
-        </div>
-
-        <div className="step">
-          <div className="circle">03</div>
-          <FaCheckCircle className="icon" />
-          <h3>Ready to Use</h3>
-          <p>Sign up or login & start exploring.</p>
+        <div className="download-image">
+          <img src="new.png2.png" alt="App on mobile" className="download-app-image" />
         </div>
       </div>
     </section>
